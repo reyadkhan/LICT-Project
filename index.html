@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hospital Management System</title>
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+		<script src="js/jssor.slider.min.js"></script>	<script src="js/myScript.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="welcome">
+				<p>LICT Project</p>
+				<h1>Hospital Management System</h1>	
+			</div>
+		</header>
+		<main>
+			<section class="mainContent">
+				<div class="carousel">
+				        <!-- jssor slider -->
+				
+						<div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 600px;
+						height: 300px;">
+
+						<!-- Loading Screen -->
+						<div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/loading.gif') no-repeat 50% 50%; background-color: rgba(0, 0, 0, .7);"></div>
+
+						<!-- Slides Container -->
+						<div u="slides" style="position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+							overflow: hidden;">
+							<div>
+								<a u=image href="#"><img src="images/01.jpg" /></a>
+							</div>
+							<div>
+								<a u=image href="#"><img src="images/02.jpg" /></a>
+							</div>
+							<div>
+								<a u=image href="#"><img src="images/03.jpg" /></a>
+							</div>
+							<div>
+								<a u=image href="#"><img src="images/05.jpg" /></a>
+							</div>
+						</div>
+						<!--#region Bullet Navigator Skin Begin -->
+						<style>
+							/* jssor slider bullet navigator skin 01 css */
+							/*
+							.jssorb01 div           (normal)
+							.jssorb01 div:hover     (normal mouseover)
+							.jssorb01 .av           (active)
+							.jssorb01 .av:hover     (active mouseover)
+							.jssorb01 .dn           (mousedown)
+							*/
+							.jssorb01 {
+								position: absolute;
+							}
+
+								.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+									position: absolute;
+									/* size of bullet elment */
+									width: 12px;
+									height: 12px;
+									filter: alpha(opacity=70);
+									opacity: .7;
+									overflow: hidden;
+									cursor: pointer;
+									border: #000 1px solid;
+								}
+
+								.jssorb01 div {
+									background-color: gray;
+								}
+
+									.jssorb01 div:hover, .jssorb01 .av:hover {
+										background-color: #d3d3d3;
+									}
+
+								.jssorb01 .av {
+									background-color: #fff;
+								}
+
+								.jssorb01 .dn, .jssorb01 .dn:hover {
+									background-color: #555555;
+								}
+						</style>
+						<!-- bullet navigator container -->
+						<div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+							<!-- bullet navigator item prototype -->
+							<div u="prototype"></div>
+						</div>
+						<!--#endregion Bullet Navigator Skin End -->
+						<!--#region Arrow Navigator Skin Begin -->
+						<!-- Help: https://www.jssor.com/development/slider-with-arrow-navigator.html -->
+						<style>
+							/* jssor slider arrow navigator skin 05 css */
+							/*
+							.jssora05l                  (normal)
+							.jssora05r                  (normal)
+							.jssora05l:hover            (normal mouseover)
+							.jssora05r:hover            (normal mouseover)
+							.jssora05l.jssora05ldn      (mousedown)
+							.jssora05r.jssora05rdn      (mousedown)
+							.jssora05l.jssora05lds      (disabled)
+							.jssora05r.jssora05rds      (disabled)
+							*/
+							.jssora05l, .jssora05r {
+								display: block;
+								position: absolute;
+								/* size of arrow element */
+								width: 40px;
+								height: 40px;
+								cursor: pointer;
+								background: url(images/a17.png) no-repeat;
+								overflow: hidden;
+							}
+
+							.jssora05l {
+								background-position: -10px -40px;
+							}
+
+							.jssora05r {
+								background-position: -70px -40px;
+							}
+
+							.jssora05l:hover {
+								background-position: -130px -40px;
+							}
+
+							.jssora05r:hover {
+								background-position: -190px -40px;
+							}
+
+							.jssora05l.jssora05ldn {
+								background-position: -250px -40px;
+							}
+
+							.jssora05r.jssora05rdn {
+								background-position: -310px -40px;
+							}
+
+							.jssora05l.jssora05lds {
+								background-position: -10px -40px;
+								opacity: .3;
+								pointer-events: none;
+							}
+
+							.jssora05r.jssora05rds {
+								background-position: -70px -40px;
+								opacity: .3;
+								pointer-events: none;
+							}
+						</style>
+						<!-- Arrow Left -->
+						<span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+						</span>
+						<!-- Arrow Right -->
+						<span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+						</span>
+					</div>
+					<!-- Jssor Slider End -->
+				
+								
+				</div>
+				<div class="login">
+					<div class="showLogin">
+						<a href="#"><span>LOGIN</span></a>
+					</div>
+					<form action="" class="loginForm">
+						<input type="" type="text" class="userId" placeholder="Enter Your User Id" /><br /><br>
+						<input class="password" type="password" placeholder="Password" /><br /><br>
+						<input type="submit" value="Sign In" class="submitLog" />
+					</form>
+				</div>
+			</section>
+			<aside class="widget">
+				<div class="calendar"></div>
+				<div class="watch">
+					<ul id="clock">	
+						<li id="sec"></li>
+						<li id="hour"></li>
+						<li id="min"></li>
+					</ul>
+				</div>
+			</aside>
+		</main>
+		
+		<div id="loader">
+			<div>
+			Welcome To <br />
+			Digital Bangladesh
+			</div>
+		</div>
+		
+	</body>
+</html>

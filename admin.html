@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hospital Management System</title>
+		<link rel="stylesheet" href="css/jquery-ui.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>		
+		<script src="js/myScript.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="welcomeAdmin">
+				<p class="welcomeBack"></p>
+				<h1>Hospital Management System</h1>	
+			</div>
+		</header>
+		<main class="mainAdmin">
+			<nav>
+				<ul>
+					<li class="doctorShow activeli">Doctors</li>
+					<li class="patientShow">Patients</li>
+					<li class="appointmentShow">Appointments</li>
+				</ul>
+				<div class="adminLogout">
+					<span>Log Out</span>
+				</div>
+			</nav>
+			<section class="doctorRecords">
+				<p class="list">Doctors Lists</p>
+				<p class="addNew">Add New Records</p>
+				<table class="updateData">
+					<tr>
+						<th>SI NO.</th>
+						<th>Doctor Name</th>
+						<th>Specialization</th>
+						<th>Options</th>
+					</tr>
+					<tr>
+						<td>01</td>
+						<td>Dr. Akter</td>
+						<td>Neprologist</td>
+						<td>Modify | Delete</td>
+					</tr>
+					<tr>
+						<td>02</td>
+						<td>Dr. Akter</td>
+						<td>Neprologist</td>
+						<td>Modify | Delete</td>
+					</tr>
+				</table>				
+				
+				<table class="deleteTable updateData">
+					<caption>Deleted Records</caption>
+					<tr>
+						<th>SI NO.</th>
+						<th>Doctor Name</th>
+						<th>Specialization</th>
+						<th>Options</th>
+					</tr>
+				</table>
+			</section>
+			
+			<section class="patientRecords">
+				<p class="list">Patients Lists</p>
+				<p class="addNew">Add New Records</p>
+				<table class="updateData">
+					<tr>
+						<th>SI NO.</th>
+						<th>Patient Name</th>
+						<th>Address</th>
+						<th>Sex</th>
+						<th>Options</th>
+					</tr>
+				</table>
+				
+				<table class="deleteTable updateData">
+					<caption>Deleted Records</caption>
+					<tr>
+						<th>SI NO.</th>
+						<th>Patient Name</th>
+						<th>Address</th>
+						<th>Sex</th>
+						<th>Options</th>
+					</tr>
+				</table>
+			</section>
+			
+			<section class="appointmentRecords">
+				<p class="list">Appointments Lists</p>
+				<p class="addNew">Add New Records</p>
+				<table class="updateData">
+					<tr>
+						<th>SI NO.</th>
+						<th>Patient Name</th>
+						<th>Doctor Name</th>
+						<th>Time</th>
+						<th>Date</th>
+						<th>Options</th>
+					</tr>
+				</table>
+				
+				<table class="deleteTable updateData">
+					<caption>Deleted Records</caption>
+					<tr>
+						<th>SI NO.</th>
+						<th>Patient Name</th>
+						<th>Doctor Name</th>
+						<th>Time</th>
+						<th>Date</th>
+						<th>Options</th>
+					</tr>
+				</table>
+			</section>	
+			<div class="watchAdmin">
+					<ul id="clock">	
+						<li id="sec"></li>
+						<li id="hour"></li>
+						<li id="min"></li>
+					</ul>
+			</div>
+			
+		</main>
+		<!--Bye Bye Loader --->
+		<div id="byeLoader">
+			<div>
+			Bye Bye Admin ! <br />
+			Have a Good Time....
+			</div>
+		</div>
+		
+		
+		<!--*********Modals**********-->
+			<div class="modal">
+				<div class="modalBody">
+					<form action="" id="doctorUpdate">
+						<p class="formText">Add New Doctor</p>
+						<p>Doctor Name: <input type="text" /></p>
+						<p>Specialization: <input type="text" /></p>
+						<p><input class="upButton" type="submit" value="Update" /><p>
+					</form>
+					
+					<form action="" id="patientUpdate">
+						<p class="formText">Add New Patient</p>
+						<p>Patient Name: <input type="text" /></p>
+						<p>Sex: <input type="text" /></p>
+						<p>Address: <input type="text" /></p>
+						<p><input class="upButton" type="submit" value="Update" /><p>
+					</form>
+					
+					<form action="" id="addAppointment">
+					<p class="formText">Add New Appointment</p>
+						<p>Doctor Id: <input type="text" /></p>
+						<p>Patient Id: <input type="text" /></p>
+						<p>Time: <input type="time" /></p>
+						<p>Date: <input type="date" /></p>
+						<p><input class="upButton" type="submit" value="Update" /><p>
+					</form>
+				</div>
+			</div>
+	</body>
+</html>
